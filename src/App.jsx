@@ -9,19 +9,17 @@ import ContactPage from "./pages/Contact";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/perfumes" element={<ShopPage />} />
-          <Route path="/collections" element={<CollectionsPage />} />
-          <Route path="/order" element={<OrderPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      {/* <Header /> */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/perfumes" element={<ShopPage />} />
+        <Route path="/collections" element={<CollectionsPage />} />
+        <Route path="/order" element={<OrderPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
