@@ -32,7 +32,11 @@ function Header() {
         </ul>
       </nav>
       <button className={style.humberger} onClick={() => setDisplay(!display)}>
-        <i className="uil uil-bars"></i>
+        {display ? (
+          <i className="uil uil-multiply"></i>
+        ) : (
+          <i className="uil uil-bars"></i>
+        )}
       </button>
     </header>
   );
