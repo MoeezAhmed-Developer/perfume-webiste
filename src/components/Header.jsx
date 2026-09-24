@@ -10,33 +10,30 @@ function Header() {
         <a href="/">Perfume Store</a>
       </div>
       <nav>
-        {display && (
-          <ul>
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="#">Perfumes</a>
-            </li>
-            <li>
-              <a href="#">Collections</a>
-            </li>
-            <li>
-              <a href="#">Track Order</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        )}
+        <ul className={display ? style.showMenu : ""}>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#">Perfumes</a>
+          </li>
+          <li>
+            <a href="#">Collections</a>
+          </li>
+          <li>
+            <a href="#">Track Order</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
       </nav>
       <button className={style.humberger} onClick={() => setDisplay(!display)}>
         ---
       </button>
-      {/* <i className="uil uil-bars"></i> */}
     </header>
   );
 }

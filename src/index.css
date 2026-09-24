@@ -12,14 +12,10 @@ h3 {
 
 a {
   text-decoration: none;
+  outline: none;
+  border: none;
 }
 
 ul li {
   list-style-type: none;
-}
-
-.uil-bars {
-  color: #fff;
-  cursor: pointer;
-  display: none;
 }

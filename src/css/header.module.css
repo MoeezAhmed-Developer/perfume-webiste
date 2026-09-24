@@ -37,12 +37,26 @@
     top: 60px;
     left: 0;
     background-color: #001542;
+    display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     padding: 20px;
     height: 100vh;
     width: 60vw;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-20px);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+  .header ul.showMenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
   }
 
   .header ul li {
