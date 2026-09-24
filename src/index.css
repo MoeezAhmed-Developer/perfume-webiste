@@ -17,3 +17,9 @@ a {
 ul li {
   list-style-type: none;
 }
+
+.uil-bars {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
