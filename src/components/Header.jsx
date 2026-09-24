@@ -32,7 +32,7 @@ function Header() {
         </ul>
       </nav>
       <button className={style.humberger} onClick={() => setDisplay(!display)}>
-        ---
+        <i className="uil uil-bars"></i>
       </button>
     </header>
   );
