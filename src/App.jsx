@@ -4,7 +4,7 @@ import HomePage from "./pages/Home";
 import ShopPage from "./pages/Perfumes";
 import CollectionsPage from "./pages/Collections";
 import AboutPage from "./pages/About";
-import OrderPage from "./pages/order";
+import OrderPage from "./pages/Order";
 import ContactPage from "./pages/Contact";
 
 function App() {
