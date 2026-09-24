@@ -31,6 +31,17 @@ function Header() {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
+        {/* <div className="site-icons">
+          <button>
+            <i className="uil uil-home"></i>
+          </button>
+          <button>
+            <i className="uil uil-home"></i>
+          </button>
+          <button>
+            <i className="uil uil-home"></i>
+          </button>
+        </div> */}
       </nav>
       <button className={style.humberger} onClick={() => setDisplay(!display)}>
         {display ? (
