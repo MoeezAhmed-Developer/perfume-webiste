@@ -36,7 +36,7 @@
     position: absolute;
     top: 60px;
     left: 0;
-    background-color: #001542;
+    background-color: var(--primary);
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -60,6 +60,9 @@
   }
 
   .header ul li {
+    font-size: 14px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
     font-size: 14px;
   }
 
