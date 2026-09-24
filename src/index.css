@@ -19,3 +19,22 @@ a {
 ul li {
   list-style-type: none;
 }
+
+:root {
+  --primary: #7b4b3a;
+  --secondary: #a66a52;
+
+  --accent: #d8a48f;
+  --accent-light: #f3dcd2;
+
+  --background: #fffaf7;
+  --surface: #ffffff;
+  --surface-soft: #f8eee9;
+
+  --text: #2d2421;
+  --text-light: #796e69;
+
+  --border: #eadbd4;
+
+  --success: #6f9275;
+}

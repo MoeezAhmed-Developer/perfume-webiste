@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import style from "../css/header.module.css";
 
 function Header() {
@@ -7,27 +8,27 @@ function Header() {
   return (
     <header className={style.header}>
       <div className={style.siteLogo}>
-        <a href="/">Perfume Store</a>
+        <Link to="/">Perfume Store</Link>
       </div>
       <nav>
         <ul className={display ? style.showMenu : ""}>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#">Perfumes</a>
+            <Link to="/perfumes">Perfumes</Link>
           </li>
           <li>
-            <a href="#">Collections</a>
+            <Link to="/collections">Collections</Link>
           </li>
           <li>
-            <a href="#">Track Order</a>
+            <Link to="/order">Track Order</Link>
           </li>
           <li>
-            <a href="#">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

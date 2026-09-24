@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 100px;
-  background-color: #001542;
+  background-color: var(--primary);
 }
 
 .header .siteLogo a {
