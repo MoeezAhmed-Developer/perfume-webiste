@@ -6,7 +6,7 @@ function FeaturedCard({ img, name, para, price, link }) {
       <img src={img} alt={name} />
       <h4>{name}</h4>
       <p>{para}</p>
-      <p>${price}</p>
+      <p>PKR {price}</p>
       <a href={link}>Shop Now</a>
     </div>
   );
