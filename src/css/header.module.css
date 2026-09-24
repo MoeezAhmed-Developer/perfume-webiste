@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background-color: #001542;
+}
+
+.header .siteLogo a {
+  font-size: 20px;
+  color: #fff;
+}
+
+.header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.header ul li a {
+  color: #fff;
+}
