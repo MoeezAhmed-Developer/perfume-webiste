@@ -1,0 +1,27 @@
+.BenifitsSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 100px;
+  margin: 50px 0;
+}
+
+.BenifitsSection div i {
+  font-size: 28px;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .BenifitsSection {
+    padding: 20px;
+  }
+
+  .BenifitsSection div i {
+    font-size: 24px;
+  }
+
+  .BenifitsSection div h3 {
+    font-size: 16px;
+  }
+}
