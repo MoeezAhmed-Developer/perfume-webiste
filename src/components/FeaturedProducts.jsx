@@ -93,6 +93,7 @@ function FeaturedProducts() {
     <div className={style.FeaturedProducts}>
       {perfumes.splice(0, 5).map((perfume) => (
         <FeaturedCard
+          key={perfume.id}
           img={perfume.image}
           name={perfume.name}
           para={perfume.description}
