@@ -15,6 +15,12 @@ function Header() {
             <a href="#">Perfumes</a>
           </li>
           <li>
+            <a href="#">Collections</a>
+          </li>
+          <li>
+            <a href="#">Track Order</a>
+          </li>
+          <li>
             <a href="#">About</a>
           </li>
           <li>
