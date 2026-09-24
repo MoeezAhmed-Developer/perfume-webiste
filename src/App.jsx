@@ -1,4 +1,5 @@
 import BenifitsSection from "./components/BenifitsSection";
+import FeaturedProducts from "./components/FeaturedProducts";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <HeroSection />
       <BenifitsSection />
+      <FeaturedProducts />
     </>
   );
 }
