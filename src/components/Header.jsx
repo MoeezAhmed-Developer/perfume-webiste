@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import style from "../css/header.module.css";
+import "../css/header.css";
 
 function Header() {
   const [display, setDisplay] = useState(false);
@@ -13,22 +14,22 @@ function Header() {
       <nav>
         <ul className={display ? style.showMenu : ""}>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/perfumes">Perfumes</Link>
+            <NavLink to="/perfumes">Perfumes</NavLink>
           </li>
           <li>
-            <Link to="/collections">Collections</Link>
+            <NavLink to="/collections">Collections</NavLink>
           </li>
           <li>
-            <Link to="/order">Track Order</Link>
+            <NavLink to="/order">Track Order</NavLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
         {/* <div className="site-icons">
