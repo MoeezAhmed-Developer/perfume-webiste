@@ -6,6 +6,7 @@ import CollectionsPage from "./pages/Collections";
 import AboutPage from "./pages/About";
 import OrderPage from "./pages/Order";
 import ContactPage from "./pages/Contact";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/order" element={<OrderPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
   );
