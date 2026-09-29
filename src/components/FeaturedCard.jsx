@@ -5,6 +5,9 @@ function FeaturedCard({ img, name, para, price, link }) {
     <div className={style.FeaturedCard}>
       <img src={img} alt={name} />
       <div className={style.cardDetails}>
+        <button className={style.wishlist}>
+          <i className="uil uil-heart"></i>
+        </button>
         <h4>{name}</h4>
         <p>{para}</p>
         <p className={style.price}>PKR {price}</p>
