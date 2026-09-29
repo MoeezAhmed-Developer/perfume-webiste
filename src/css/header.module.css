@@ -30,13 +30,40 @@
   color: #fff;
 }
 
+.header nav .rightSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .humberger {
   display: none;
+}
+
+.siteIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.siteIcons button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.siteIcons button i {
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
   .header {
     padding: 20px;
+    /* justify-content: end; */
   }
 
   .header ul {
@@ -68,6 +95,13 @@
 
   .header ul li {
     font-size: 14px;
+  }
+
+  .header nav .rightSide {
+    display: flex;
+    /* justify-content: start; */
+    align-items: start;
+    gap: 20px;
   }
 
   .uil-bars {

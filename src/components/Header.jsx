@@ -12,45 +12,51 @@ function Header() {
         <Link to="/">Perfume Store</Link>
       </div>
       <nav>
-        <ul className={display ? style.showMenu : ""}>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/perfumes">Perfumes</NavLink>
-          </li>
-          <li>
-            <NavLink to="/collections">Collections</NavLink>
-          </li>
-          <li>
-            <NavLink to="/order">Track Order</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about">About</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Contact</NavLink>
-          </li>
-        </ul>
-        {/* <div className="site-icons">
-          <button>
-            <i className="uil uil-home"></i>
-          </button>
-          <button>
-            <i className="uil uil-home"></i>
-          </button>
-          <button>
-            <i className="uil uil-home"></i>
-          </button>
-        </div> */}
+        <div className={style.rightSide}>
+          <ul className={display ? style.showMenu : ""}>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/perfumes">Perfumes</NavLink>
+            </li>
+            <li>
+              <NavLink to="/collections">Collections</NavLink>
+            </li>
+            <li>
+              <NavLink to="/order">Track Order</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
+          </ul>
+          <div className={style.siteIcons}>
+            <button>
+              <i className="uil uil-search"></i>
+            </button>
+            <button>
+              <i className="uil uil-user"></i>
+            </button>
+            <button>
+              <i className="uil uil-shopping-bag"></i>
+            </button>
+
+            <button
+              className={style.humberger}
+              onClick={() => setDisplay(!display)}
+            >
+              {display ? (
+                <i className="uil uil-multiply"></i>
+              ) : (
+                <i className="uil uil-bars"></i>
+              )}
+            </button>
+          </div>
+        </div>
       </nav>
-      <button className={style.humberger} onClick={() => setDisplay(!display)}>
-        {display ? (
-          <i className="uil uil-multiply"></i>
-        ) : (
-          <i className="uil uil-bars"></i>
-        )}
-      </button>
     </header>
   );
 }
