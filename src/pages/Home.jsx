@@ -1,6 +1,7 @@
 import HeroSection from "../components/HeroSection";
 import BenifitsSection from "../components/BenifitsSection";
 import FeaturedProducts from "../components/FeaturedProducts";
+import AboutSection from "../components/AboutSection";
 
 function HomePage() {
   document.title = "Home | Perfume";
@@ -9,6 +10,7 @@ function HomePage() {
       <HeroSection />
       <BenifitsSection />
       <FeaturedProducts />
+      <AboutSection />
     </div>
   );
 }
