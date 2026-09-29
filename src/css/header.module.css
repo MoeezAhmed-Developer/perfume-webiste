@@ -60,6 +60,21 @@
   cursor: pointer;
 }
 
+.count {
+  color: #fff;
+  background-color: var(--secondary);
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  right: 90px;
+}
+
 @media (max-width: 600px) {
   .header {
     padding: 20px;
@@ -117,5 +132,10 @@
     color: #fff;
     font-size: 20px;
     cursor: pointer;
+  }
+
+  .count {
+    top: 11px;
+    right: 40px;
   }
 }

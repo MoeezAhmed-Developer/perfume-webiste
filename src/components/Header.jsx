@@ -43,6 +43,7 @@ function Header() {
             <button>
               <i className="uil uil-shopping-bag"></i>
             </button>
+            <span className={style.count}>0</span>
 
             <button
               className={style.humberger}
