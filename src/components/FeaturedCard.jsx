@@ -11,9 +11,9 @@ function FeaturedCard({ img, name, para, price, link }) {
         <h4>{name}</h4>
         <p>{para}</p>
         <p className={style.price}>PKR {price}</p>
-        <a href={link}>
+        <button className={style.cartBtn}>
           <i className="uil uil-shopping-bag"></i> Add to Cart
-        </a>
+        </button>
       </div>
     </div>
   );
