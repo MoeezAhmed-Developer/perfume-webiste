@@ -1,4 +1,5 @@
 function ShopPage() {
+  document.title = "Perfumes";
   return (
     <div>
       <h1>shop</h1>
